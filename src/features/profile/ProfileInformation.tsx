@@ -133,6 +133,10 @@ export default function ProfileInformation({beep}: {beep: boolean}) {
   const goToEditProfile = () => {
     history.push("/editProfile");
   }
+
+  const goToResetPasswordPage = () => {
+    history.push("/resetPassword");
+  }
   return(
     doneLoading ? (
       <div>
@@ -164,7 +168,12 @@ export default function ProfileInformation({beep}: {beep: boolean}) {
             </Card.Text>
           </Card.Body>
         </div>
-        {showEditButton ? <Button id="EditProfileButton" onClick={goToEditProfile}>Edit Profile</Button> : <></>}
+        {showEditButton ?
+          <>
+            <Button id="EditProfileButton" onClick={goToEditProfile}>Edit Profile</Button>
+            <Button id="ResetPassword" onClick={goToResetPasswordPage}>Reset Password</Button>
+          </> 
+        : <></>}
       </div>
     ) : (
       <Image

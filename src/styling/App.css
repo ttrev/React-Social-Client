@@ -521,6 +521,7 @@ button {
 }
 
 #EditProfileButton,
+#ResetPassword,
 #loginCard button,
 #postBtn,
 #refreshBtn,
@@ -577,13 +578,15 @@ button {
 
 #CancelEdits,
 #EditProfileButton,
+#ResetPassword,
 #UpdateProfile,
 .FormButtons,
 #EditGroupProfileButton {
   border-radius: 10px;
 }
 
-#EditProfileButton {
+#EditProfileButton,
+#ResetPassword {
   position: absolute;
   margin: 0.5vh 0vw 0vh 2vw;
 }
@@ -623,6 +626,7 @@ button {
 }
 
 #EditProfileButton,
+#ResetPassword,
 #leaveCommentBtn,
 #postBtn,
 #refreshBtn,
@@ -633,7 +637,11 @@ button {
 }
 
 #EditProfileButton {
-  margin-left: 30%;
+  margin-left: 50%;
+  margin-bottom: 30px;
+}
+#ResetPassword {
+  margin-left: 10%;
   margin-bottom: 30px;
 }
 
@@ -658,6 +666,7 @@ a,
 body,
 #CancelEdits, #CancelEdits:hover,
 #EditProfileButton, #EditProfileButton:hover,
+#ResetPassword, #ResetPassword:hover,
 .follow-btn, .follow-btn:hover,
 #homeLink, #homeLink:hover,
 #leaveCommentBtn, #leaveCommentBtn:hover,
@@ -683,6 +692,7 @@ body,
 
 #CancelEdits:hover,
 #EditProfileButton:hover,
+#ResetPassword:hover,
 #leaveCommentBtn:hover,
 #loginCard button:hover,
 #postBtn:hover,
